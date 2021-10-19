@@ -1,0 +1,24 @@
+{
+  "compilerOptions": {
+    "baseUrl": ".",
+    "module": "esnext",
+    "target": "esnext",
+    "declaration": true, // 生成声明文件，开启后会自动生成声明文件
+    "moduleResolution": "node", // 编译模式，默认为node
+    "noUnusedLocals": true, // 只检查声明，未使用只提示不报错
+    "strict": true, // 严格模式
+    "lib": ["ESNext","DOM"], // 导入的类库
+    "types": ["node"], // 需要导入的包
+    "paths": {
+      "src/*": ["src/*"],
+      "/@types/*": ["types/*"]
+    }
+
+  },
+  "exclude": [
+    "node_modules"
+  ],
+  "include": [
+    "src"
+  ]
+}

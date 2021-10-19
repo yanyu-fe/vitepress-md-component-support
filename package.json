@@ -1,0 +1,57 @@
+{
+  "name": "vitepress-md-component-support",
+  "version": "0.0.1",
+  "description": "this is vite-md-component-support plugins",
+  "main": "dist/index.js",
+  "typings": "types/index.d.ts",
+  "bin": {
+    "vitepress-mcs": "bin/vitepress-mcs.js"
+  },
+  "files": [
+    "bin",
+    "lib",
+    "dist",
+    "types"
+  ],
+  "keywords": [
+    "vite",
+    "vitepress"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/yanyu-fe/vitepress-md-component-support.git"
+  },
+  "homepage": "https://github.com/yanyu-fe/vitepress-md-component-support/#readme",
+  "scripts": {},
+  "engines": {
+    "node": ">=12.0.0"
+  },
+  "gitHooks": {
+    "pre-commit": "lint-staged"
+  },
+  "lint-staged": {
+    "*.js": [
+      "prettier --write"
+    ],
+    "*.ts": [
+      "prettier --parser=typescript --write"
+    ]
+  },
+  "author": "aibayanyu",
+  "license": "MIT",
+  "devDependencies": {
+    "@types/markdown-it": "^12.2.3",
+    "@types/node": "^16.11.1",
+    "conventional-changelog-cli": "^2.1.1",
+    "prettier": "^2.4.1",
+    "rimraf": "^3.0.2"
+  },
+  "dependencies": {
+    "@vitejs/plugin-vue": "^1.9.3",
+    "@vitejs/plugin-vue-jsx": "^1.2.0",
+    "markdown-it": "^12.2.0",
+    "vite": "^2.6.10",
+    "vitepress": "^0.20.0",
+    "vue": "^2.6.14"
+  }
+}
