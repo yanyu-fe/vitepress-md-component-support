@@ -1,6 +1,6 @@
 {
   "name": "vitepress-md-component-support",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "this is vite-md-component-support plugins",
   "main": "dist/index.js",
   "typings": "types/index.d.ts",
